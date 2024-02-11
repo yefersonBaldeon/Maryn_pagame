@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap");
+
+.container {
+  height: 60vh;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pulse 1.3s ease infinite;
+  margin-top: 3%;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart-shape:hover {
+  background-color: pink;
+}
+
+.heart-shape {
+  background-color: white;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform: rotate(45deg);
+}
+
+.heart-shape:before,
+.heart-shape:after {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  content: "";
+  border-radius: 50%;
+  background-color: inherit;
+}
+.heart-shape:before {
+  bottom: 0px;
+  left: -100px;
+}
+.heart-shape:after {
+  top: -100px;
+  left: 0px;
+}
+
+body {
+  background-color: rgb(240, 47, 98);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  color: yellow;
+  text-decoration: none;
+  font-family: "Homemade Apple", cursive;
+  text-shadow: red 4px 4px;
+}
+
+a:hover {
+  color: rgb(255, 189, 201);
+}
+
+.backNext {
+  font-size: 1em;
+  padding: 5px;
+  margin: 5px;
+}
+
+p {
+  font-family: "Homemade Apple", cursive;
+  color: white;
+  font-size: 2.5em;
+  margin-right: 3.5em;
+}
+
+#mensaje {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 12em;
+  margin-top: 5em;
+}
+
+#choose {
+  margin-top: 10em;
+  margin-bottom: 2em;
+  box-shadow: #441824 10px 10px;
+}
+
+@media screen and (max-width: 720px) {
+  p {
+    font-size: 1.5em;
+  }
+  #mensaje {
+    margin: 3em;
+  }
+  #choose {
+    max-width: 300px;
+  }
+}
+
+
+
+.one {
+  font-family: Arial, sans-serif;
+  text-align: center; /* Centrar el texto dentro del elemento */
+  display: flex; /* Establecer el contenedor como flexbox */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
