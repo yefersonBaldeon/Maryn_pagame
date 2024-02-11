@@ -23,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 no-repeat
             `,
     }).then(() => {
-      // Abrir YouTube en una nueva pestaña del navegador
-      window.open("./second", "_blank");
+      // Abrir la URL en la misma ventana del navegador
+      window.location.href = "./second";
     });
   });
 });
